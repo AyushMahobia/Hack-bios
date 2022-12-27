@@ -169,13 +169,7 @@ li{
 
 
 /* main page */
-.main-section{
-    /* position: relative;
-    width: 100%;
-    max-width: 65rem;
-    margin: 0 auto;
-    height: 100vh; */
-}
+
 .home{
     min-height: 85vh;
     position: relative;
