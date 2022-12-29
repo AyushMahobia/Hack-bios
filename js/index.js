@@ -28,3 +28,53 @@ navigation.addEventListener("click", () =>{
         navigation.classList.remove("hamburger");
         menuOpen = false;
 })
+
+
+// toggle accordian
+const accOne = document.querySelector("#question1");
+const ansOne = document.querySelector(".ans-one");
+const plusOne = document.querySelector("#plus-one");
+accOne.addEventListener("click", () =>{
+    ansOne.classList.toggle('open-accordian');
+    plusOne.classList.toggle('rotate-plus');
+})
+
+const accTwo = document.querySelector("#question2");
+const ansTwo = document.querySelector(".ans-two");
+const plusTwo = document.querySelector("#plus-two");
+accTwo.addEventListener("click", () =>{
+    ansTwo.classList.toggle('open-accordian');
+    plusTwo.classList.toggle('rotate-plus');
+})
+
+const accThree = document.querySelector("#question3");
+const ansThree = document.querySelector(".ans-three");
+const plusThree = document.querySelector("#plus-three");
+accThree.addEventListener("click", () =>{
+    ansThree.classList.toggle('open-accordian');
+    plusThree.classList.toggle('rotate-plus');
+})
+
+const accFour = document.querySelector("#question4");
+const ansFour = document.querySelector(".ans-four");
+const plusFour = document.querySelector("#plus-four");
+accFour.addEventListener("click", () =>{
+    ansFour.classList.toggle('open-accordian');
+    plusFour.classList.toggle('rotate-plus');
+})
+
+const accFive = document.querySelector("#question5");
+const ansFive = document.querySelector(".ans-five");
+const plusFive = document.querySelector("#plus-five");
+accFive.addEventListener("click", () =>{
+    ansFive.classList.toggle('open-accordian');
+    plusFive.classList.toggle('rotate-plus');
+})
+
+const accSix = document.querySelector("#question6");
+const ansSix = document.querySelector(".ans-six");
+const plusSix = document.querySelector("#plus-six");
+accSix.addEventListener("click", () =>{
+    ansSix.classList.toggle('open-accordian');
+    plusSix.classList.toggle('rotate-plus');
+})

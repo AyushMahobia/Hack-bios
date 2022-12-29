@@ -77,6 +77,10 @@ li{
 .navigation li a:hover{
     border-color: var(--primary-color);
 }
+.navigation:hover li a:not(:hover){
+    opacity: 0.3;
+    filter: blur(1px);
+}
 .menu-btn{
     width: 1.8rem;
     height: 1.8rem;
@@ -151,6 +155,10 @@ li{
     .navigation li a{
         font-size: 1.5rem;
     }
+    .navigation:hover li a:not(:hover){
+        opacity: 1;
+        filter: blur(0);
+    }
     .navigation.hamburger{
         visibility: visible;
         pointer-events: all;
@@ -196,6 +204,11 @@ li{
     font-size: 8vh;
     transform:translate(29%,-220%);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 1rem; */
+    margin-right: 3rem;
+    margin-left: 1rem;
 }
 .home-text-1{
     color: aliceblue;
@@ -371,7 +384,7 @@ h2 {
     margin-left: 1rem;
     margin-right: 1rem;
    border-radius: 1rem 0rem;
-   box-shadow: inset 0.3rem 0 0.9rem var(--black);
+   box-shadow: inset 0 0.1rem 0.9rem var(--primary-color);
 }
 .accordion-link{
     text-decoration: none;
@@ -416,10 +429,10 @@ h2 {
     padding: 1rem;
     color: var(--black);
 }
-.accordion-item:target .answer{
+.open-accordian{
     max-height: 15rem;
 }
-.accordion-item:target .accordion-link .fa-plus{
+.rotate-plus{
     transform: rotate(45deg);
 }
 .faq-section{
